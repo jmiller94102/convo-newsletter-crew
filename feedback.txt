@@ -1,6 +1,6 @@
 Regenerate the newsletter with the following feedback:
-- Add numbers to each type of luck section. For example, "Luck from motion" should be "Type 2: Luck from motion"
-- Remove the curated resources section
+- Change the name to each type of luck section. For example, "Luck from motion" should be "Category 2: Luck from motion"
+- Create an additional curated resource related to influencers to follow.
 - Update the action steps section with the following:
     - Teach your expertise by creating valuable YouTube content.
     - Share progress updates on your projects on LinkedIn and X.
