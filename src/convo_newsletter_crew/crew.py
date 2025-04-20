@@ -30,6 +30,12 @@ class ConvoNewsletterCrew:
                     temperature=float(os.getenv("LLM_TEMPERATURE", "0.7")),
                     request_timeout=float(os.getenv("LLM_REQUEST_TIMEOUT", "300")),
                     max_retries=int(os.getenv("LLM_MAX_RETRIES", "3")),
+                    config={
+                        "format": "openai",  # Explicitly set output format to OpenAI
+                        "response_format": {"type": "json"},  # Specify JSON response format
+                        "force_tool_use": True,  # Encourage tool usage
+                        "tool_system_prompt": "You MUST use the available tools when appropriate. Format your responses like OpenAI function calls."
+                    }
                 )
             elif llm_provider == "openai":
                 return LLM(
